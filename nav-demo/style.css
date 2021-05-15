@@ -3,6 +3,7 @@ body, html {
     padding:0;
     margin:0;
     overflow: hidden;
+    font-family: 'Helvetica';
 }
 nav{
     position:fixed;
@@ -20,6 +21,10 @@ nav li{
     text-align: center;
     display: inline-block;
     margin-top: 14px;
+}
+nav li:active{
+    background:rgb(255, 243, 176);
+    color:#FFF;
 }
 nav li:hover{
     cursor:pointer;
@@ -99,5 +104,4 @@ body.page-transitions-ready .page{
     padding: 10px;
     background: rgba(33,33,33,0.5);
     color: #FAFAFA;
-    font-family: 'Helvetica';
 }
