@@ -31,11 +31,13 @@ nav li:hover{
     width: 100vw;
     height: 100vh;
 }
+body.page-transitions-ready .page{
+    transition: transform 500ms ease;
+}
 .page{
     position:fixed;
     top:0;
     left:0;
-    transition: transform 500ms ease;
 }
 .page.landing-page{
     transform: translate(0, 0);

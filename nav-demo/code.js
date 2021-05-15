@@ -2,6 +2,9 @@ const transition_time = 500;
 var viewport = document.querySelector('.viewport'),
 navigating = false;
 directMode = false;
+window.onload = () => {
+    document.body.classList.add('page-transitions-ready')
+}
 function toggleMode(){
     directMode = !directMode;
 }
