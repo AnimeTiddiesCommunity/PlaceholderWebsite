@@ -35,7 +35,7 @@ nav li:hover{
     position:fixed;
     top:0;
     left:0;
-    transition: transform 333ms ease-in-out;
+    transition: transform 500ms ease;
 }
 .page.landing-page{
     transform: translate(0, 0);

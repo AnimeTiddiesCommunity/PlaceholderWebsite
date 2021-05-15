@@ -1,4 +1,4 @@
-const transition_time = 333;
+const transition_time = 500;
 var viewport = document.querySelector('.viewport'),
 navigating = false;
 function changeView(page){
