@@ -1,0 +1,96 @@
+body, html {
+    background: #000;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+}
+nav{
+    position:fixed;
+    left:0;
+    top:0;
+    width: 100vw;
+    height:60px;
+    background:#000;
+    z-index: 2;
+    padding: 0px 14px;
+}
+nav li{
+    padding: 6px 12px;
+    background: #FFF;
+    text-align: center;
+    display: inline-block;
+    margin-top: 14px;
+}
+nav li:hover{
+    cursor:pointer;
+}
+.viewport{
+    z-index: 1;
+}
+.page, .viewport{
+    width: 100vw;
+    height: 100vh;
+}
+.page{
+    position:fixed;
+    top:0;
+    left:0;
+    transition: transform 333ms ease-in-out;
+}
+.page.landing-page{
+    transform: translate(0, 0);
+    background:purple;
+}
+.page.top-page{
+    transform: translate(0, -100%);
+    background:cyan;
+}
+.page.left-page{
+    transform: translate(-100%, 0);
+    background:green;
+}
+.page.right-page{
+    transform: translate(100%, 0);
+    background:orange;
+}
+.page.bottom-page{
+    transform: translate(0, 100%);
+    background:red;
+}
+.viewport.view-top .page.top-page{
+    transform: translate(0, 0);
+}
+.viewport.view-top .page.landing-page{
+    transform: translate(0, 100%);
+}
+.viewport.view-left .page.left-page{
+    transform: translate(0, 0);
+}
+.viewport.view-left .page.landing-page{
+    transform: translate(100%, 0);
+}
+.viewport.view-right .page.right-page{
+    transform: translate(0, 0);
+}
+.viewport.view-right .page.landing-page{
+    transform: translate(-100%, 0);
+}
+.viewport.view-bottom .page.bottom-page{
+    transform: translate(0, 0);
+}
+.viewport.view-bottom .page.landing-page{
+    transform: translate(0, -100%);
+}
+
+.page .page-content{
+    width:100vw;
+    height:100vh;
+    position:relative;
+}
+
+.page-content .example-text{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

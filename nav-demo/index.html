@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Demo</title>
+    <link href="./style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <nav>
+        <li onClick="changeView('top')">Top</li>
+        <li onClick="changeView('left')">Left</li>
+        <li onClick="changeView('landing')">Landing</li>
+        <li onClick="changeView('right')">Right</li>
+        <li onClick="changeView('bottom')">Bottom</li>
+    </nav>
+    <div class="viewport view-landing">
+        <div class="page top-page">
+            <div class="page-content">
+                <div class="example-text"><h1>Some dummy text</h1></div>
+            </div>
+        </div>
+        <div class="page left-page">
+            <div class="page-content">
+                <div class="example-text"><h1>Some dummy text</h1></div>
+            </div>
+        </div>
+        <div class="page landing-page">
+            <div class="page-content">
+                <div class="example-text"><h1>Some dummy text</h1></div>
+            </div>
+        </div>
+        <div class="page right-page">
+            <div class="page-content">
+                <div class="example-text"><h1>Some dummy text</h1></div>
+            </div>
+        </div>
+        <div class="page bottom-page">
+            <div class="page-content">
+                <div class="example-text"><h1>Some dummy text</h1></div>
+            </div>
+        </div>
+    </div>
+    <script src="./code.js"></script>
+</body>
+</html>
